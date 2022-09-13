@@ -1,0 +1,62 @@
+@use 'reset';
+@use 'hero';
+@use 'header';
+@use 'about';
+@use 'services';
+@use 'divider';
+@use 'contact';
+@use 'footer';
+
+
+@mixin icon($font-size, $height, $width, $color) {
+    display: inline-flex;
+    text-align: center;
+    font-size: $font-size;
+    height: $height;
+    width: $width;
+    border-radius: 10px;
+    color: $color;
+}
+$primary: rgb(129, 127, 255);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300;400;500&family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+@import "./node_modules/bootstrap/scss/bootstrap";
+
+$font-title:'Poiret One', cursive;
+$font-text:'Montserrat Alternates', sans-serif;
+
+html{
+    overflow-x: hidden
+}
+.navbar{
+    font-family: $font-title;
+    font-weight: 600;
+}
+.nav-link{
+    font-family: $font-text;
+    font-weight: 500;
+}
+.title{
+    font-family: $font-title;
+}
+.text{
+    font-family: $font-text;
+}
+.icon{
+    @include icon(2.5em, 40px, 40px, rgb(129, 127, 255));
+}
+.line-break{
+    opacity: 1;
+    margin: auto;
+    border: 0;
+    height: 0.2em;
+    background-color: ghostwhite;
+}
+.image{
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    overflow: hidden;
+}
+.btn-primary:hover{
+    background-color: rgb(191, 190, 255);
+}
+

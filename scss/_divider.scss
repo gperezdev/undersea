@@ -1,0 +1,16 @@
+@mixin divider-style($color1, $color2) {
+    width: 100%;
+    height: 5em;
+    background: linear-gradient($color1, $color2);
+    
+}
+.divider{
+    @include divider-style(#20364D, #152231);
+
+    &-contact{
+        @include divider-style(#152231, #0c141d);
+    }
+    &-footer{
+        @include divider-style(#0c141d, #06090e);
+    }
+}

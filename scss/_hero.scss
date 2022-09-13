@@ -1,0 +1,76 @@
+.hero{
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  background: linear-gradient(0deg, rgba(226,238,252,1) 0%, rgba(196,236,253,1) 50%, rgba(112,187,218,1) 100%);
+    
+    &__title{
+      position: relative;
+      font-family: 'Rubik Mono One', sans-serif;
+      color: #20364D !important;
+      z-index: 5;
+    }
+    &__title-secondary{
+      font-family: 'Rubik Mono One', sans-serif;
+      color: rgb(129, 127, 255);
+    }
+    &__subtitle{
+      position: relative;
+      z-index: 5;
+      font-family: 'Montserrat Alternates', sans-serif;
+      font-weight: 200;
+      color: #20364D !important;
+    }
+    &__sea{ 
+      height: 10%;
+      width:100%;
+      position:absolute;
+      bottom:0;
+      left:0;
+      background: #20364D;
+
+      &__wave{
+        background: url(/img/wave.svg) repeat-x; 
+        position: absolute;
+        top: -198px;
+        width: 6400px;
+        height: 198px;
+        animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+        transform: translate3d(0, 0, 0);
+      }
+
+      &__wave:nth-of-type(2){
+        top: -175px;
+        animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+        opacity: 1;
+      }
+
+      @keyframes wave {
+        0% {
+          margin-left: 0;
+        }
+        100% {
+          margin-left: -1600px;
+        }
+      }
+        
+      @keyframes swell {
+        0%, 100% {
+          transform: translate3d(0,-25px,0);
+        }
+        50% {
+          transform: translate3d(0,5px,0);
+        }
+      }
+    }
+}
+@media (orientation:landscape) and (max-height:500px){
+  .hero__title{
+    margin-top: 30vh;
+  }
+}
+  
+  
+
+

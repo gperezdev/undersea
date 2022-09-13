@@ -1,0 +1,26 @@
+.navbar{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+    &__text{
+        font-family: 'Rubik Mono One', sans-serif;
+        color: #20364D !important;
+
+        &-secondary{
+            font-family: 'Rubik Mono One', sans-serif;
+            color: rgb(129, 127, 255);
+        }
+    }
+}
+.nav-link:focus{
+    color: rgb(129, 127, 255) !important;
+}
+.dropdown-item{
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+.nav-link:hover{
+    color: rgb(129, 127, 255) !important;
+}
+.nav-link.active {
+    color: rgb(78, 75, 255) !important;
+}
+

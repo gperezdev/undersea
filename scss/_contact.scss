@@ -1,0 +1,18 @@
+.contact{
+    background-color: #0c141d;
+    scroll-margin-top: 7.5rem;
+}
+.form-control{
+    background-color: #0c141d !important;
+    color: ghostwhite !important;
+    border-radius:0px !important;
+    border-top: 0px !important;
+    border-left: 0px !important;
+    border-right: 0px !important;
+    border-color: rgb(129, 127, 255) !important;
+    box-shadow: none !important;
+}
+.form-control::placeholder{
+    color: rgba(248, 248, 255, 0.438) !important;
+}
+

@@ -1,0 +1,25 @@
+.footer{
+    background-color: #06090e;
+
+    &__title{
+        color: rgba(248, 248, 255, 0.75) !important;
+    }
+    &__text{
+        color: rgba(248, 248, 255, 0.5) !important;
+    }
+    &__list{
+        list-style: none !important;
+        text-decoration: none !important;
+        width: fit-content !important;
+    }
+    &__anchor{
+        text-decoration: none !important;
+        color: rgba(248, 248, 255, 0.5) !important;
+    }
+    &__anchor:hover{
+        color: rgb(129, 127, 255) !important;
+    }
+    ul{
+        padding: 0;
+    }
+}
